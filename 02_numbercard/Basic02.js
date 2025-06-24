@@ -107,3 +107,6 @@ function removeResetButton() {
     const btn = document.getElementById('resetBtn');
     if (btn) btn.remove();
 }
+
+// 예시: 터미널 창에서 node Basic02.js 입력
+play([21, 9, 4]);
