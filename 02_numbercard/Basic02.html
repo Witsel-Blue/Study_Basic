@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic02</title>
+
+        <link rel="stylesheet" href="Basic02.css">
+        <script src="Basic02.js"></script>
+    </head>
+<body>
+
+  <h1>숫자 카드 게임</h1>
+  <ul>
+    <li>
+        1~100까지의 카드 중 A, B, C 참가자 3명은 10, 30, 50, 80을 제외하고 랜덤하게 10장씩 나눠 갖고 게임을 시작합니다.
+    </li>
+    <li>
+        각 턴마다 A, B, C 참가자는 한 장씩 카드를 내려놓습니다. (아래에 입력)
+    </li>
+    <li>
+        내려놓은 카드는 <strong>기준 배열의 마지막 카드</strong>와 숫자 차이가 가장 가까운 배열 뒤에만 추가할 수 있습니다. (차이가 동일하다면, 기준 숫자가 더 큰 배열을 선택합니다.)
+    </li>
+    <li>
+        배열에 카드를 추가하려면 <strong>배열의 마지막 숫자보다 작은 숫자</strong>만 추가할 수 있습니다.
+    </li>
+    <li>
+        위 두 조건을 모두 만족하지 못하면, 해당 배열을 비우고 그 배열에 쌓여 있던 카드 수만큼 벌점을 받습니다.
+    </li>
+    <li>
+        입력된 카드 수가 3의 배수가 아닐 경우, 게임은 진행되지 않고 모든 참가자의 점수는 0점으로 처리됩니다.
+    </li>
+    <li>
+        4개의 배열이 모두 비워지면, 게임은 즉시 종료됩니다.
+    </li>
+  </ul>
+
+  <div id="play-input">
+    <input type="text" id="input" placeholder="예: 21,9,4 또는 55,8,29,13,7,61"></textarea>
+    <button onclick="runGame()">게임 시작</button>
+  </div>
+
+  <div id="play-result">
+    <h3>게임 결과</h3>
+    <p id="result"></p>
+  </div>
+</body>

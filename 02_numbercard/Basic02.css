@@ -1,0 +1,74 @@
+/* ---------- RESET ---------- */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+li { 
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+    display: block;
+    font-size: 0;
+}
+
+input {
+    outline: none;
+}
+textarea {
+    outline: none;
+    resize: none;
+}
+
+/* ---------- CARD GAME ---------- */
+body {
+    padding: 5vh 10vw;
+    max-width: 800px;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    padding-top: 24px;
+}
+li:not(:first-child) {
+    margin-top: 8px;
+}
+
+#play-input {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+input {
+    padding: 4px 8px;
+    min-width: 240px;
+}
+button {
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+#play-result {
+    margin-top: 24px;
+    text-align: center;
+}
+#result {
+    margin-top: 8px;
+}
